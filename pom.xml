@@ -31,22 +31,19 @@
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.1.1</version>
                 <configuration>
-                    <descriptorRefs>
-                        <descriptorRef>jar-with-dependencies</descriptorRef>
-                    </descriptorRefs>
+                    <descriptors>
+                        <descriptor>src/main/assembly/assembly_jar_with_dependencies.xml</descriptor>
+                        <descriptor>src/main/assembly/assembly_package_zip.xml</descriptor>
+                    </descriptors>
                     <archive>
                         <index>true</index>
                         <manifest>
-                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
                         </manifest>
                         <manifestEntries>
-                            <Premain-Class>com.dreamers.enablejmxatruntime.AgentLoader</Premain-Class>
-                            <Agent-Class>com.dreamers.enablejmxatruntime.AgentLoader</Agent-Class>
+                            <Premain-Class>sun.management.Agent</Premain-Class>
+                            <Agent-Class>sun.management.Agent</Agent-Class>
                         </manifestEntries>
                     </archive>
-                    <source>1.6</source>
-                    <target>1.6</target>
                 </configuration>
                 <executions>
                     <execution>
