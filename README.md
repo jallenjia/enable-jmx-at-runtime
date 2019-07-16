@@ -22,7 +22,7 @@ Enable the JMX at runtime, with our tool, and do analyze right now.
 
 
 ### Usage
-[download tool in release page](./releases)，deploy it on the computer running a Java app。
+[download tool in release page](../../releases)，deploy it on the computer running a Java app。
 
 Suppose you have a running Java app, process ID 9999, started by the user dreamers.
 You can enable JMX port as below:
@@ -77,7 +77,7 @@ java -Djava.rmi.server.hostname=192.168.66.38 \
 这个工具，就是用来解决这个问题的。
 
 ### 用法
-[release页下载工具](./releases)，放到运行Java应用的主机上（任意目录），解压。
+[release页下载工具](../../releases)，放到运行Java应用的主机上（任意目录），解压。
 假设有个运行中的Java应用，进程ID 9999，该进程由用户dreamers启动。你可以用如下方法，启动进程的JMX端口：
 ```shell
 # 切换用户到dreamers
